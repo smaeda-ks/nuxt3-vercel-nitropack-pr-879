@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "nuxt3-test",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "patch-package"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "nuxt": "^3.1.2",
+    "patch-package": "^6.5.1"
+  }
+}

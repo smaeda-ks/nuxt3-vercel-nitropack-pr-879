@@ -1,0 +1,16 @@
+diff --git a/node_modules/nitropack/dist/shared/nitro.dcf922e4.mjs b/node_modules/nitropack/dist/shared/nitro.dcf922e4.mjs
+index c7f12b3..9f16401 100644
+--- a/node_modules/nitropack/dist/shared/nitro.dcf922e4.mjs
++++ b/node_modules/nitropack/dist/shared/nitro.dcf922e4.mjs
+@@ -3003,8 +3003,10 @@ const vercel = defineNitroPreset({
+         nitro.options.output.serverDir,
+         ".vc-config.json"
+       );
++      const systemNodeVersion = process.versions.node.split(".")[0];
++      const runtimeVersion = `nodejs${systemNodeVersion}.x`;
+       const functionConfig = {
+-        runtime: "nodejs16.x",
++        runtime: runtimeVersion,
+         handler: "index.mjs",
+         launcherType: "Nodejs",
+         shouldAddHelpers: false
